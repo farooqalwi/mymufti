@@ -1,19 +1,15 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notonaskharabic.css);
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
-
 body{
-    background: linear-gradient(to left, LightYellow, WhiteSmoke, SeaShell, MistyRose);
-}
-
-h1{
-  /* font-family: 'Noto Naskh Arabic'; */
-  font-family: 'Reem Kufi';
-  font-size: 80px;
-  text-align: center;
-}
-
-p{
-    font-family: 'Noto Naskh Arabic';
-    font-size: 60px;
     text-align: center;
+}
+
+header{
+    font-size: 40px;
+}
+
+.intro{
+    font-size: 15pt;
+}
+
+.web-status{
+    font-size: 15pt;
 }
