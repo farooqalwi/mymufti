@@ -22,5 +22,5 @@ header{
 .web-status{
     font-size: 15pt;
     border: solid red 2px;
-    text-align: center;
+    /* text-align: center; */
 }
