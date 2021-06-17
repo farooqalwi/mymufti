@@ -3,20 +3,27 @@ body{
 }
 
 header{
-    font-size: 40px;
+    font-size: 30px;
+    border: solid red 2px;
+    float: right;
+    clear: right;
+    width: 37%;
 }
 
 .intro{
     font-size: 15pt;
+    font-size: 15pt;
     border: solid red 2px;
-    box-sizing: border-box;
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    width: 761.6px;
-    height: 203px;
+    height: 150px;
+    width: 62.5%;
+}
+.intro p{
+    color: green;
+    padding: 40px
 }
 
 .web-status{
     font-size: 15pt;
+     border: solid red 2px;
+     padding: 45px;
 }
