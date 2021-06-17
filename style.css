@@ -1,10 +1,9 @@
 body{
     text-align: center;
 }
-
 header{
     font-size: 30px;
-    border: solid red 2px;
+    border: solid black 2px;
     float: right;
     clear: right;
     width: 37%;
@@ -13,17 +12,66 @@ header{
 .intro{
     font-size: 15pt;
     font-size: 15pt;
-    border: solid red 2px;
+    border: solid black 2px;
     height: 150px;
     width: 62.5%;
 }
 .intro p{
-    color: green;
+    color: black;
     padding: 40px
 }
 
 .web-status{
     font-size: 15pt;
-     border: solid red 2px;
+     border: solid black 2px;
      padding: 45px;
 }
+.contact-form{
+    width:35%;
+    /* background-color: #4CAF50; */
+    color:black;
+    padding:20px;
+    margin:10px 0px 0px 10%;
+    border: solid black 2px;
+    border-radius: 4px;
+    float: left;
+    clear:right; 
+    line-height: 40px;  
+}
+.contact-form h1{
+   margin: 0px;
+}
+.contact-form label{
+    float:right;
+    clear:left;
+}
+.contact-form input{ 
+   float: center;
+}
+#name{
+margin-left:90px;
+}
+#mobile{
+    margin-left:134px;
+}
+#email{
+    margin-left:113px;
+}
+.our-contact{
+    width:35%;
+    /* background-color: #4CAF50; */
+    color: black;
+    padding:20px;
+    margin:10px 10% 0px 0;
+    border: solid black 2px;
+    border-radius: 4px;
+    float: right; 
+    line-height: 40px;     
+}
+.our-contact h1{
+    margin: 0px;
+ }
+ .urdu{
+     float: right;
+     clear: right;
+ }
