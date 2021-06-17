@@ -8,6 +8,13 @@ header{
 
 .intro{
     font-size: 15pt;
+    border: solid red 2px;
+    box-sizing: border-box;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 761.6px;
+    height: 203px;
 }
 
 .web-status{
