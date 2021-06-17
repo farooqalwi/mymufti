@@ -4,12 +4,23 @@ body{
 
 header{
     font-size: 40px;
+    float: right;
+    border: solid red 2px;
 }
-
 .intro{
     font-size: 15pt;
+    border: solid red 2px;
+    box-sizing: border-box;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 761.6px;
+    /* height: 203px; */
+    
 }
 
 .web-status{
     font-size: 15pt;
+    border: solid red 2px;
+    /* text-align: center; */
 }
