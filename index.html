@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,41 +8,51 @@
     <link rel="stylesheet" href="style.css">
     <title>My Mufti</title>
 </head>
+
 <body>
     <header>
         <h1>آن لائن دارالافتاء</h1>
     </header>
     <section class="intro">
         <p>
-            مفتی ڈاٹ کام ایک آئن لائن پلیٹ فارم ہے جس میں آپ مختلف موضوعات پر استفسار کرسکیں گے، اس کے علاوہ پہلے سے پوچھے گئے سوالات تک بھی رسائی کی جاسکےگی۔ (ان شاءاللہ)
+            مفتی ڈاٹ کام ایک آئن لائن پلیٹ فارم ہے جس میں آپ مختلف موضوعات پر استفسار کرسکیں گے، اس کے علاوہ پہلے سے
+            پوچھے گئے سوالات تک بھی رسائی کی جاسکےگی۔ (ان شاءاللہ)
         </p>
     </section>
 
     <section class="web-status">
         <p>
-            ویب سائٹ ابھی زیر تعمیر ہے، ذیل میں دیے گئے فارم پُرکیجیے، ویب سائٹ کی تعمیر مکمل ہوتے ہی آپ کواطلاع دےدی جائے گی۔ (شکریہ)
+            ویب سائٹ ابھی زیر تعمیر ہے، ذیل میں دیے گئے فارم پُرکیجیے، ویب سائٹ کی تعمیر مکمل ہوتے ہی آپ کواطلاع دےدی
+            جائے گی۔ (شکریہ)
         </p>
     </section>
 
-    <form class="contact-form">
-        <h1>رابطہ فارم</h1>
-        <label for="name">نام</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="mobile">موبائل نمبر</label><br>
-        <input type="text" id="mobile" name="mobile">
-        <label for="email">ای میل</label>
-        <input type="email" id="email" name="email">
-    </form>
+    <section class="contact">
+        <form class="contact-form">
+            <div class="contact-form-heading">
+                <h1>رابطہ فارم</h1><hr>
+            </div>
+            <div><label for="name">Name: </label></div>
+            <div><input type="text" id="name" name="name"></div>
+            <div><label for="mobile">Mobile No: </label></div>
+            <div><input type="text" id="mobile" name="mobile"></div>
+            <div><label for="email">E-mail: </label></div>
+            <div><input type="email" id="email" name="email"></div>
+            <button>Submit</button>
+        </form>
 
-    <form class="our-contact">
-        <h1>ہم تک پہنچیں</h1>
-        <label for="mobile">موبائل نمبر</label><br>
-        <label for="mobile">03001234567</label><br>
-        <label for="whatsapp">وھاٹس ایپ</label><br>
-        <label for="whatsapp"><a href="https://wa.me/923001234567"></a></label><br>
-        <label for="email">ای میل</label>
-        <label for="email">mymufti@gmail.com</label>
-    </form>
-
+        <form class="our-contact">
+            <div class="our-contact-heading">
+                <h1>ہم تک پہنچیں</h1><hr>
+            </div>
+            <div><label for="mobile">Mobile No: </label></div>
+            <div><label for="mobile">03001234567</label></div>
+            <div><label for="whatsapp">WhatsApp: </label></div>
+            <div><label for="whatsapp"><a href="https://wa.me/923001234567" target="_blank">+923001234567</a></label></div>
+            <div><label for="email">E-mail: </label></div>
+            <div><label for="email">mymufti@gmail.com</label></div>
+        </form>
+    </section>
 </body>
+
 </html>
