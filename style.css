@@ -31,14 +31,13 @@ header{
     color:black;
     padding:20px;
     margin:10px 0px 0px 10%;
-    border: solid black 2px;
-    border-radius: 4px;
     float: left;
     clear:right; 
     line-height: 40px;  
 }
-.contact-form h1{
-   margin: 0px;
+.contact-form h2{
+    margin: 0px;
+    border: solid black 2px;  
 }
 .contact-form label{
     float:right;
@@ -47,30 +46,39 @@ header{
 .contact-form input{ 
    float: center;
 }
-#name{
-margin-left:90px;
-}
-#mobile{
-    margin-left:134px;
-}
-#email{
-    margin-left:113px;
+/* #name{
+    padding: 11px 25px 12px 123px;
+    margin: -123px;
+    border: none;
+} */
+#mobile,#email,#name{
+    padding: 14px 116px 11px 41px;
+    margin: 0px -94px 0px -95px;
+    border: none;
+    text-align: center; 
 }
 .our-contact{
     width:35%;
-    /* background-color: #4CAF50; */
     color: black;
     padding:20px;
     margin:10px 10% 0px 0;
-    border: solid black 2px;
-    border-radius: 4px;
     float: right; 
     line-height: 40px;     
 }
-.our-contact h1{
+.our-contact h2{
     margin: 0px;
+    border: solid black 2px;
  }
  .urdu{
      float: right;
      clear: right;
  }
+ table, td, th {
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+  } 
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
