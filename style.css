@@ -5,6 +5,10 @@ body{
     margin: 0;
 }
 
+.intro{
+    text-align: right;
+}
+
 /* for Desktop Screen */
 @media screen and (min-width: 1024px) {
     header{
