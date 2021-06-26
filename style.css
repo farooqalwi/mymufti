@@ -1,93 +1,205 @@
 body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     text-align: center;
-}
-header{
-    font-size: 30px;
-    border: solid black 2px;
-    float: right;
-    clear: right;
-    width: 37%;
+    margin: 0;
 }
 
-.intro{
-    font-size: 15pt;
-    font-size: 15pt;
-    border: solid black 2px;
-    height: 150px;
-    width: 62.5%;
-}
-.intro p{
-    color: black;
-    padding: 40px
+/* for Desktop Screen */
+@media screen and (min-width: 1024px) {
+   
 }
 
-.web-status{
-    font-size: 15pt;
-     border: solid black 2px;
-     padding: 45px;
+/* for Tab (Landscape) */
+@media screen and (max-width: 1024px) {
+    body > header{
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+
+    .team{
+        grid-column: 2/-2;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team > header{
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+
+    .team > .asim{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .team > .irfan{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .team > .zubair{
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .web-status{
+        grid-column: 2/-2;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .web-status > .visitor-form{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .web-status > p{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .web-status > .status-placeholder{
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .contact{
+        grid-column: 2/-2;
+        grid-row: 4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact > header{
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+
+    .contact > .email{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .contact > .whatsapp{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .contact > .mobile{
+        grid-column: 3;
+        grid-row: 2;
+    }
+
 }
-.contact-form{
-    width:35%;
-    color:black;
-    padding:20px;
-    margin:10px 0px 0px 10%;
-    float: left;
-    clear:right; 
-    line-height: 40px;  
+
+/* for Tab (Portrait) */
+@media screen and (max-width: 768px) {
+    
 }
-.contact-form h2{
-    margin: 0px;
-    border: solid black 2px;  
+
+/* for Mobile */
+@media screen and (max-width: 360px) {
+    body > header{
+        grid-column: 2/-2;
+        grid-row: 1;
+    }
+
+    .team{
+        grid-column: 2/-2;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .team > header{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .team > .asim{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .team > .irfan{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .team > .zubair{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .web-status{
+        grid-column: 2/-2;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .web-status > .status-placeholder{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .web-status > p{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .web-status > .visitor-form{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+
+    .contact{
+        grid-column: 2/-2;
+        grid-row: 4;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact > header{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .contact > .email{
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .contact > .contact-placeholder{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .contact > p{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .contact > .whatsapp{
+        grid-column: 1;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .contact > .mobile{
+        grid-column: 1;
+        grid-row: 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
 }
-.contact-form label{
-    float:right;
-    clear:left;
-}
-.contact-form input{ 
-   float: center;
-}
-/* #name{
-    padding: 11px 25px 12px 123px;
-    margin: -123px;
-    border: none;
-} */
-#mobile,#email,#name{
-    padding: 14px 116px 11px 41px;
-    margin: 0px -94px 0px -95px;
-    border: none;
-    text-align: center; 
-}
-.our-contact{
-    width:35%;
-    color: black;
-    padding:20px;
-    margin:10px 10% 0px 0;
-    float: right; 
-    line-height: 40px;     
-}
-.our-contact h2{
-    margin: 0px;
-    border: solid black 2px;
- }
- .urdu{
-     float: right;
-     clear: right;
- }
- table, td, th {
-    border: 1px solid black;
-    margin: 0px;
-    padding: 0px;
-  } 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .btn{
-      background-color: rgb(199, 184, 184);
-      border-radius:3px;
-      width: 90px;
-      height: 30px;
-      box-shadow: none;
-      border:solid black 1px;
-      font-weight: bold;
-  }
