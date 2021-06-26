@@ -1,4 +1,7 @@
 body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    text-align: center;
     margin: 0;
 }
 
@@ -9,7 +12,87 @@ body{
 
 /* for Tab (Landscape) */
 @media screen and (max-width: 1024px) {
-    
+    body > header{
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+
+    .team{
+        grid-column: 1/-1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team > header{
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+
+    .team > .asim{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .team > .irfan{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .team > .zubair{
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .web-status{
+        grid-column: 1/-1;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .web-status > .visitor-form{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .web-status > p{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .web-status > .status-placeholder{
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .contact{
+        grid-column: 1/-1;
+        grid-row: 4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact > header{
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+
+    .contact > .email{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .contact > .whatsapp{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .contact > .mobile{
+        grid-column: 3;
+        grid-row: 2;
+    }
+
 }
 
 /* for Tab (Portrait) */
