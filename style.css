@@ -18,7 +18,7 @@ body{
     }
 
     .team{
-        grid-column: 1/-1;
+        grid-column: 2/-2;
         grid-row: 2;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -45,7 +45,7 @@ body{
     }
 
     .web-status{
-        grid-column: 1/-1;
+        grid-column: 2/-2;
         grid-row: 3;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -67,7 +67,7 @@ body{
     }
 
     .contact{
-        grid-column: 1/-1;
+        grid-column: 2/-2;
         grid-row: 4;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -102,5 +102,104 @@ body{
 
 /* for Mobile */
 @media screen and (max-width: 360px) {
-    
+    body > header{
+        grid-column: 2/-2;
+        grid-row: 1;
+    }
+
+    .team{
+        grid-column: 2/-2;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .team > header{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .team > .asim{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .team > .irfan{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .team > .zubair{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .web-status{
+        grid-column: 2/-2;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .web-status > .status-placeholder{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .web-status > p{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .web-status > .visitor-form{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+
+    .contact{
+        grid-column: 2/-2;
+        grid-row: 4;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact > header{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .contact > .email{
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .contact > .contact-placeholder{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .contact > p{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .contact > .whatsapp{
+        grid-column: 1;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .contact > .mobile{
+        grid-column: 1;
+        grid-row: 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
 }
