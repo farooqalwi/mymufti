@@ -1,8 +1,16 @@
+:root {
+    --serenade: #FFF5EB;
+    --catskillWhite: #DEEDF0;
+    --mandysPink: #F4C7AB;
+    --eagle: #B2B8A3;
+    --opal: #A7C4BC;
+  }
+
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@1,700&display=swap');
 
 @font-face {
-    font-family: jameelNooriNastaleeq;
-    src: url(fonts/Jameel_Noori_Nastaleeq.ttf);
+    font-family: NotoNastaliqUrdu;
+    src: url(fonts/NotoNastaliqUrdu-Regular.ttf);
   }
 
 body{
@@ -19,7 +27,7 @@ h1{
 }
 
 p{
-    font-family: jameelNooriNastaleeq;
+    font-family: NotoNastaliqUrdu;
     font-size: 30px;
     padding: 0 10px;
 }
@@ -30,23 +38,23 @@ a{
 
 /* background colors */
 body > header{
-    background-color: #FFF5EB;
+    background-color: var(--serenade);
 }
 
 body > .team{
-    background-color: #DEEDF0;
+    background-color: var(--catskillWhite);
 }
 
 body > .web-status{
-    background-color: #F4C7AB;
+    background-color: var(--mandysPink);
 }
 
 body > .contact{
-    background-color: #B2B8A3;
+    background-color: var(--eagle);
 }
 
 .asim, .irfan{
-    background-color: #A7C4BC;
+    background-color: var(--opal);
     border-radius: 10px;
 }
 
@@ -84,6 +92,7 @@ body > .contact{
     .team > .asim > .team-img > img, .team > .irfan > .team-img > img{
         width: 130px;
         height: 130px;
+        opacity: 0.5;
     }
 
     .asim > p, .irfan > p{
