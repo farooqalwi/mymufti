@@ -1,9 +1,9 @@
 :root {
-    --serenade: #FFF5EB;
-    --catskillWhite: #DEEDF0;
-    --mandysPink: #F4C7AB;
-    --eagle: #B2B8A3;
-    --opal: #A7C4BC;
+    --intro-bg-color: #FFF5EB;        /* serenade */
+    --team-bg-color: #DEEDF0;   /* catskillWhite */
+    --webStatus-bg-color: #F4C7AB;      /* mandysPink */
+    --contact-bg-color: #B2B8A3;           /* eagle */
+    --teamMember-bg-color: #A7C4BC;            /* opal */
   }
 
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@1,700&display=swap');
@@ -38,23 +38,23 @@ a{
 
 /* background colors */
 body > header{
-    background-color: var(--serenade);
+    background-color: var(--intro-bg-color);
 }
 
 body > .team{
-    background-color: var(--catskillWhite);
+    background-color: var(--team-bg-color);
 }
 
 body > .web-status{
-    background-color: var(--mandysPink);
+    background-color: var(--webStatus-bg-color);
 }
 
 body > .contact{
-    background-color: var(--eagle);
+    background-color: var(--contact-bg-color);
 }
 
 .asim, .irfan{
-    background-color: var(--opal);
+    background-color: var(--teamMember-bg-color);
     border-radius: 10px;
 }
 
