@@ -141,7 +141,7 @@ body > .contact{
         grid-row: 1;
     }
     
-    .contact > .faceboob{
+    .contact > .facebook{
         grid-column: 1;
         grid-row: 2;
         display: grid;
@@ -153,14 +153,14 @@ body > .contact{
         height: 60px;
     }
 
-    .faceboob > .facebook-img{
+    .facebook > .facebook-img{
         grid-column: 1;
         grid-row: 1;
         text-align: right;
         padding-right: 40px;
     }
 
-    .faceboob > .fbGroup-link{
+    .facebook > .fbGroup-link{
         grid-column: 2;
         grid-row: 1;
         text-align: left;
@@ -249,7 +249,7 @@ body > .contact{
         grid-row: 1;
     }
     
-    .contact > .faceboob{
+    .contact > .facebook{
         grid-column: 1;
         grid-row: 2;
         display: grid;
@@ -261,14 +261,14 @@ body > .contact{
         height: 60px;
     }
 
-    .faceboob > .facebook-img{
+    .facebook > .facebook-img{
         grid-column: 1;
         grid-row: 1;
         text-align: right;
         padding-right: 40px;
     }
 
-    .faceboob > .fbGroup-link{
+    .facebook > .fbGroup-link{
         grid-column: 2;
         grid-row: 1;
         text-align: left;
@@ -358,7 +358,7 @@ body > .contact{
         grid-row: 1;
     }
     
-    .contact > .faceboob{
+    .contact > .facebook{
         grid-column: 1;
         grid-row: 2;
         display: grid;
@@ -370,14 +370,14 @@ body > .contact{
         height: 60px;
     }
 
-    .faceboob > .facebook-img{
+    .facebook > .facebook-img{
         grid-column: 1;
         grid-row: 1;
         text-align: right;
         padding-right: 40px;
     }
 
-    .faceboob > .fbGroup-link{
+    .facebook > .fbGroup-link{
         grid-column: 2;
         grid-row: 1;
         text-align: left;
@@ -467,14 +467,14 @@ body > .contact{
         grid-row: 1;
     }
     
-    .contact > .faceboob{
+    .contact > .facebook{
         grid-column: 1;
         grid-row: 2;
         display: grid;
         grid-template-columns: 1fr;
     }
     
-    .contact > .faceboob > .facebook-img > img{
+    .contact > .facebook > .facebook-img > img{
         grid-column: 1;
         grid-row: 1;
     
@@ -482,7 +482,7 @@ body > .contact{
         height: 50px;
     }
     
-    .contact > .faceboob > p{
+    .contact > .facebook > p{
         grid-column: 1;
         grid-row: 2;
     }
