@@ -491,11 +491,6 @@ body > .contact{
 
 /* for small height screen */
 @media screen and (min-height: 1200px) {
-
-    footer{
-        min-height: 100vh;
-    }
-
     body > header{
         grid-column: 1/-1;
         grid-row: 1;
@@ -564,6 +559,7 @@ body > .contact{
     }
 
     .contact{
+        min-height: 100vh;
         grid-column: 1/-1;
         grid-row: 4;
         display: grid;
