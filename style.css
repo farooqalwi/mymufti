@@ -68,6 +68,10 @@ body > .contact{
     font-weight: bold;
 }
 
+.visitor-form{
+    
+}
+
 
 /* for Desktop Screen */
 @media screen and (min-width: 1024px) {
