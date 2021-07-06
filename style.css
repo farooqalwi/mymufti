@@ -283,7 +283,7 @@ body > .contact{
         grid-column: 1/-1;
         grid-row: 2;
         display: grid;
-        grid-template-columns: 1fr 200px 1fr;
+        grid-template-columns: 1fr 250px 1fr;
         padding-bottom: 30px;
         row-gap: 30px;
     }
@@ -378,7 +378,7 @@ body > .contact{
         grid-column: 1/-1;
         grid-row: 2;
         display: grid;
-        grid-template-columns: 1fr 200px 1fr;
+        grid-template-columns: 1fr 250px 1fr;
         padding-bottom: 30px;
         row-gap: 30px;
     }
