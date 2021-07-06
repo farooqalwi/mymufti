@@ -120,7 +120,7 @@ body > .contact{
     .member > p{
         font-size: 18px;
     }
-    
+
     .cached{
         font-size: 160px;
         opacity: 0.8;
@@ -157,7 +157,7 @@ body > .contact{
         grid-template-columns: 1fr;
         padding-bottom: 30px;
     }
-    
+
     .contact > header{
         grid-column: 1;
         grid-row: 1;
@@ -215,7 +215,7 @@ body > .contact{
     .member > p{
         font-size: 18px;
     }
-    
+
     .cached{
         font-size: 160px;
         opacity: 0.8;
@@ -252,7 +252,7 @@ body > .contact{
         grid-template-columns: 1fr;
         padding-bottom: 30px;
     }
-    
+
     .contact > header{
         grid-column: 1;
         grid-row: 1;
@@ -311,7 +311,7 @@ body > .contact{
     .member > p{
         font-size: 18px;
     }
-    
+
     .cached{
         font-size: 120px;
         opacity: 0.8;
@@ -347,7 +347,7 @@ body > .contact{
         grid-template-columns: 1fr;
         padding-bottom: 30px;
     }
-    
+
     .contact > header{
         grid-column: 1;
         grid-row: 1;
@@ -406,7 +406,7 @@ body > .contact{
     .member > p{
         font-size: 18px;
     }
-    
+
     .cached{
         font-size: 120px;
         opacity: 0.8;
@@ -442,7 +442,7 @@ body > .contact{
         grid-template-columns: 1fr;
         padding-bottom: 30px;
     }
-    
+
     .contact > header{
         grid-column: 1;
         grid-row: 1;
@@ -453,7 +453,7 @@ body > .contact{
         grid-row: 2;
         font-size: 14px;
     }
-    
+
     .facebook-contact > .facebook-icon{
         grid-column: 1;
         grid-row: 3;
@@ -500,7 +500,7 @@ body > .contact{
     .member > p{
         font-size: 18px;
     }
-    
+
     .cached{
         font-size: 160px;
         opacity: 0.8;
@@ -538,7 +538,7 @@ body > .contact{
         grid-template-rows: repeat(12, 1fr);
         padding-bottom: 30px;
     }
-    
+
     .contact > header{
         grid-column: 1;
         grid-row: 1;
