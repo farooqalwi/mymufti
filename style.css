@@ -6,7 +6,7 @@
     --teamMember-bg-color: #A7C4BC;            /* opal */
   }
 
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
 
 @font-face {
     font-family: NotoNastaliqUrdu;
@@ -23,7 +23,7 @@ body{
 
 /* fonts family */
 h1{
-    font-family: 'Inria Serif', serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 30px;
 }
 
@@ -31,6 +31,10 @@ p{
     font-family: NotoNastaliqUrdu;
     font-size: 20px;
     padding: 0 10px;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 /* background colors */
@@ -163,16 +167,17 @@ body > .contact{
         grid-row: 1;
     }
 
-    .facebook-contact > p{
-        grid-column: 1;
-        grid-row: 2;
+    .facebook-contact > a{
         font-size: 18px;
+        /* padding-bottom: 10px; */
+        text-align: center;
     }
 
-    .facebook-contact > .facebook-icon{
+    .facebook-contact > a > .facebook-icon{
         grid-column: 1;
         grid-row: 3;
-        font-size: 60px;
+        font-size: 32px;
+        color: black;
         opacity: 0.8;
     }
 }
