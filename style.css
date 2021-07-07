@@ -24,12 +24,12 @@ body{
 /* fonts family */
 h1{
     font-family: 'DM Serif Display', serif;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 p{
     font-family: NotoNastaliqUrdu;
-    font-size: 20px;
+    font-size: 1.125rem;
     padding: 0 10px;
 }
 
@@ -117,16 +117,12 @@ body > .contact{
     }
 
     .rate_review{
-        font-size: 130px;
+        font-size: 8rem;
         opacity: 0.5;
     }
 
-    .member > p{
-        font-size: 18px;
-    }
-
     .cached{
-        font-size: 160px;
+        font-size: 10rem;
         opacity: 0.8;
     }
 
@@ -168,15 +164,13 @@ body > .contact{
     }
 
     .facebook-contact > a{
-        font-size: 18px;
-        /* padding-bottom: 10px; */
-        text-align: center;
+        font-size: 1.125rem;
     }
 
     .facebook-contact > a > .facebook-icon{
         grid-column: 1;
         grid-row: 3;
-        font-size: 32px;
+        font-size: 2rem;
         color: black;
         opacity: 0.8;
     }
