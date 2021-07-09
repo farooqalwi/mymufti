@@ -35,12 +35,23 @@ body header h1{
 p{
     font-family: NotoNastaliqUrdu;
     font-size: 1.125rem;
-    padding: 0 10px;
 }
 
-a:link {
+a{
+    font-size: 1.125rem;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.facebook-contact a:link {
     text-decoration: none;
 }
+
+.facebook-contact a:hover{
+    color: black;
+    opacity: 1;
+}
+
 
 /* background colors */
 body > header{
@@ -50,12 +61,16 @@ body > header{
 
 body header p{
     margin: 0;
-    padding: 10px 0;
+    padding: 0 20px;
 }
 
 body > .team{
     background-color: var(--team-bg-color);
     padding: 10px 0;
+}
+
+.team header{
+    padding-bottom: 10px;
 }
 
 body > .status{
@@ -84,7 +99,6 @@ body > .contact{
     .team{
         grid-row: 2;
         display: grid;
-        padding-bottom: 30px;
     }
 
     .team > header{
@@ -138,8 +152,84 @@ body > .contact{
         justify-content: center;
     }
 
-    .facebook-contact > a{
-        font-size: 1.125rem;
+    .facebook-contact > a > .facebook-icon{
+        grid-column: 1;
+        grid-row: 3;
+        font-size: 2rem;
+        color: black;
+        opacity: 0.8;
+    }
+
+    .facebook-contact > .fbGroup-link{
+        color: black;
+        padding-left: 10px;
+    }
+}
+
+/* for Tab (Landscape) */
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+    body > header{
+        grid-row: 1;
+    }
+
+    .team{
+        grid-row: 2;
+        display: grid;
+    }
+
+    .team > header{
+        grid-row: 1;
+    }
+
+    .team > .member{
+        grid-row: 2;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* icon for team member */
+    .rate_review{
+        font-size: 8rem;
+        opacity: 0.5;
+    }
+
+    .status{
+        grid-row: 3;
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .status .visitor-form{
+        width: 50%;
+    }
+
+    /* undercinstruction icon */
+    .status > .cached{
+        font-size: 10rem;
+        opacity: 0.8;
+        margin: 0 20px;
+    }
+
+    .contact{
+        grid-row: 4;
+        display: grid;
+    }
+
+    .contact > header{
+        grid-row: 1;
+    }
+
+    .contact .facebook-contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .facebook-contact > a > .facebook-icon{
@@ -156,387 +246,203 @@ body > .contact{
     }
 }
 
-/* for Tab (Landscape) */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-    body > header{
-        grid-column: 1/-1;
-        grid-row: 1;
-    }
-
-    .team{
-        grid-column: 1/-1;
-        grid-row: 2;
-        display: grid;
-        grid-template-columns: 1fr 200px 160px 200px 1fr;
-        padding-bottom: 30px;
-    }
-
-    .team > header{
-        grid-column: 1/-1;
-        grid-row: 1;
-    }
-
-    .team > .member1{
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .team > .member2{
-        grid-column: 4;
-        grid-row: 2;
-    }
-
-    .rate_review{
-        font-size: 120px;
-        opacity: 0.5;
-    }
-
-    .member > p{
-        font-size: 18px;
-    }
-
-    .cached{
-        font-size: 160px;
-        opacity: 0.8;
-    }
-
-    .status{
-        grid-column: 1/-1;
-        grid-row: 3;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        padding: 50px 20px;
-        align-items: center;
-    }
-
-    .status > .visitor-form{
-        grid-column: 1/4;
-        grid-row: 1;
-    }
-
-    .status > p{
-        grid-column: 4/7;
-        grid-row: 1;
-    }
-
-    .status > .cached{
-        grid-column: 7;
-        grid-row: 1;
-    }
-
-    .contact{
-        grid-column: 1/-1;
-        grid-row: 4;
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-bottom: 30px;
-    }
-
-    .contact > header{
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .facebook-contact > p{
-        grid-column: 1;
-        grid-row: 2;
-        font-size: 18px;
-    }
-
-    .facebook-contact > .facebook-icon{
-        grid-column: 1;
-        grid-row: 3;
-        font-size: 60px;
-        opacity: 0.8;
-    }
-}
-
 /* for Tab (Portrait) */
-@media screen and (max-width: 768px) and (min-width: 420px) {
+@media screen and (max-width: 800px) and (min-width: 420px) {
     body > header{
-        grid-column: 1/-1;
         grid-row: 1;
     }
 
     .team{
-        grid-column: 1/-1;
         grid-row: 2;
         display: grid;
-        grid-template-columns: 1fr 250px 1fr;
-        padding-bottom: 30px;
-        row-gap: 30px;
+        justify-content: center;
     }
 
     .team > header{
-        grid-column: 1/-1;
         grid-row: 1;
     }
 
     .team > .member1{
-        grid-column: 2;
         grid-row: 2;
     }
 
     .team > .member2{
-        grid-column: 2;
         grid-row: 3;
     }
 
+    .team > .member > .all-members{
+        width: 250px;
+    }
+
+    /* icon for team member */
     .rate_review{
-        font-size: 120px;
+        font-size: 8rem;
         opacity: 0.5;
     }
 
-    .member > p{
-        font-size: 18px;
-    }
-
-    .cached{
-        font-size: 120px;
-        opacity: 0.8;
-    }
-
     .status{
-        grid-column: 1/-1;
         grid-row: 3;
         display: grid;
-        grid-template-columns: 1fr 400px 1fr;
-        padding: 30px 0;
+        justify-items: center;
     }
 
+    /* undercinstruction icon */
     .status > .cached{
-        grid-column: 2;
+        font-size: 7.5rem;
+        opacity: 0.8;
         grid-row: 1;
     }
 
     .status > p{
-        grid-column: 1/-1;
         grid-row: 2;
+        padding: 0 30px;
     }
 
     .status > .visitor-form{
-        grid-column: 2;
         grid-row: 3;
+        width: 220px;
     }
 
     .contact{
-        grid-column: 1/-1;
         grid-row: 4;
         display: grid;
-        grid-template-columns: 1fr;
-        padding-bottom: 30px;
     }
 
     .contact > header{
-        grid-column: 1;
         grid-row: 1;
     }
 
-    .facebook-contact > p{
-        grid-column: 1;
-        grid-row: 2;
-        font-size: 18px;
+    .contact .facebook-contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .facebook-contact > .facebook-icon{
+    .facebook-contact > a > .facebook-icon{
         grid-column: 1;
         grid-row: 3;
-        font-size: 60px;
+        font-size: 2rem;
+        color: black;
         opacity: 0.8;
+    }
+
+    .facebook-contact > .fbGroup-link{
+        color: black;
+        padding-left: 10px;
     }
 }
 
 /* for Mobile */
 @media screen and (max-width: 420px) {
     body > header{
-        grid-column: 1/-1;
         grid-row: 1;
     }
 
     .team{
-        grid-column: 1/-1;
         grid-row: 2;
         display: grid;
-        grid-template-columns: 1fr 250px 1fr;
-        padding-bottom: 30px;
-        row-gap: 30px;
+        justify-content: center;
     }
 
     .team > header{
-        grid-column: 1/-1;
         grid-row: 1;
     }
 
     .team > .member1{
-        grid-column: 2;
         grid-row: 2;
     }
 
     .team > .member2{
-        grid-column: 2;
         grid-row: 3;
     }
 
+    .team > .member > .all-members{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    /* icon for team member */
     .rate_review{
-        font-size: 120px;
+        font-size: 6rem;
         opacity: 0.5;
     }
 
-    .member > p{
-        font-size: 18px;
-    }
-
-    .cached{
-        font-size: 120px;
-        opacity: 0.8;
+    .all-members p{
+        font-size: 1rem;
     }
 
     .status{
-        grid-column: 1/-1;
         grid-row: 3;
         display: grid;
-        grid-template-columns: 1fr;
-        padding: 30px 0;
+        justify-items: center;
     }
 
+    /* undercinstruction icon */
     .status > .cached{
-        grid-column: 1;
+        font-size: 7rem;
+        opacity: 0.8;
         grid-row: 1;
     }
 
     .status > p{
-        grid-column: 1;
         grid-row: 2;
+        padding: 0 20px;
     }
 
     .status > .visitor-form{
-        grid-column: 1;
         grid-row: 3;
+        width: 60%;
     }
 
     .contact{
-        grid-column: 1/-1;
         grid-row: 4;
         display: grid;
-        grid-template-columns: 1fr;
-        padding-bottom: 30px;
     }
 
     .contact > header{
-        grid-column: 1;
         grid-row: 1;
     }
 
-    .facebook-contact > p{
-        grid-column: 1;
-        grid-row: 2;
-        font-size: 14px;
+    .contact .facebook-contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .facebook-contact > .facebook-icon{
+    .facebook-contact > a > .facebook-icon{
         grid-column: 1;
         grid-row: 3;
-        font-size: 50px;
+        font-size: 2rem;
+        color: black;
         opacity: 0.8;
+    }
+
+    .facebook-contact > .fbGroup-link{
+        color: black;
+        padding-left: 10px;
     }
 }
 
-/* for large height screen */
-@media screen and (min-height: 1200px) {
-    body > header{
-        grid-column: 1/-1;
-        grid-row: 1;
-    }
-
-    .team{
-        grid-column: 1/-1;
-        grid-row: 2;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        padding-bottom: 30px;
-    }
-
-    .team > header{
-        grid-column: 1/-1;
-        grid-row: 1;
-    }
-
-    .team > .member1{
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .team > .member2{
-        grid-column: 4;
-        grid-row: 2;
-    }
-
-    .rate_review{
-        font-size: 130px;
-        opacity: 0.5;
-    }
-
-    .member > p{
-        font-size: 18px;
-    }
-
-    .cached{
-        font-size: 160px;
-        opacity: 0.8;
-    }
-
+/* for huge height screen */
+@media screen and (min-height: 800px){
     .status{
-        grid-column: 1/-1;
-        grid-row: 3;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        padding: 50px 0;
-    }
-
-    .status > .visitor-form{
-        grid-column: 1/3;
-        grid-row: 1;
-    }
-
-    .status > p{
-        grid-column: 3/7;
-        grid-row: 1;
-    }
-
-    .status > .cached{
-        grid-column: 7/-1;
-        grid-row: 1;
-    }
-
-    .contact{
         min-height: 100vh;
-        grid-column: 1/-1;
-        grid-row: 4;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, 1fr);
-        padding-bottom: 30px;
+        align-items: flex-start;
     }
 
-    .contact > header{
-        grid-column: 1;
-        grid-row: 1;
+    .status form{
+        margin-top: 80px;
     }
 
-    .facebook-contact > p{
-        grid-column: 1;
-        grid-row: 2;
-        font-size: 18px;
+    .status p{
+        margin-top: 160px;
     }
 
-    .facebook-contact > .facebook-icon{
-        grid-column: 1;
-        grid-row: 1;
-        font-size: 60px;
-        opacity: 0.8;
+    .status .cached{
+        margin-top: 120px;
     }
+
 }
-
 
 .visitor-form{
 	background: #FAFAFA;
