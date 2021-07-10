@@ -103,15 +103,11 @@ body > .contact{
 
     .team{
         grid-row: 2;
-        display: grid;
-    }
-
-    .team > header{
-        grid-row: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     .team > .member{
-        grid-row: 2;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -179,15 +175,11 @@ body > .contact{
 
     .team{
         grid-row: 2;
-        display: grid;
-    }
-
-    .team > header{
-        grid-row: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     .team > .member{
-        grid-row: 2;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -259,24 +251,21 @@ body > .contact{
 
     .team{
         grid-row: 2;
-        display: grid;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
 
-    .team > header{
-        grid-row: 1;
-    }
-
-    .team > .member1{
-        grid-row: 2;
-    }
-
-    .team > .member2{
-        grid-row: 3;
+    .team > .member{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
     }
 
     .team > .member > .all-members{
         width: 250px;
+        margin-top: 20px;
     }
 
     /* icon for team member */
@@ -345,20 +334,16 @@ body > .contact{
 
     .team{
         grid-row: 2;
-        display: grid;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
 
-    .team > header{
-        grid-row: 1;
-    }
-
-    .team > .member1{
-        grid-row: 2;
-    }
-
-    .team > .member2{
-        grid-row: 3;
+    .team > .member{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
     }
 
     .team > .member > .all-members{
