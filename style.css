@@ -15,14 +15,15 @@
 
 body{
     display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-rows: auto;
+    position: relative;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-html, body {
-    height: 100%;
-}
 
 
 /* fonts family */
