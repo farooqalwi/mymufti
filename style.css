@@ -13,15 +13,22 @@
     src: url(NotoNastaliqUrdu-Regular.ttf);
   }
 
+
+html, body {
+    height: 100%;
+}
+
 body{
-    display: grid;
     width: 100%;
-    min-height: 100vh;
-    grid-template-rows: auto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+.status{
+    flex: 1;
 }
 
 
@@ -411,6 +418,26 @@ body > .contact{
         color: black;
         padding-left: 10px;
     }
+}
+
+/* for large screen height */
+@media screen and (min-height: 900px){
+
+    /* undercinstruction icon */
+    .status > .cached{
+        font-size: 13rem;
+        opacity: 0.8;
+        margin: 0 20px;
+    }
+
+    .status p{
+        font-size: 2rem;
+    }
+
+    .status .visitor-form{
+        margin-left: 40px;
+    }
+
 }
 
 
