@@ -1,9 +1,9 @@
 :root {
-    --intro-bg-color: #FFF5EB;        /* serenade */
-    --team-bg-color: #DEEDF0;   /* catskillWhite */
-    --webStatus-bg-color: #F4C7AB;      /* mandysPink */
-    --contact-bg-color: #B2B8A3;           /* eagle */
-    --teamMember-bg-color: #A7C4BC;            /* opal */
+    --intro-bg-color: #FFDE7D;
+    --team-bg-color: #F6416C;
+    --status-bg-color: white;
+    --contact-bg-color: #00B8A9;
+    --teamMember-bg-color: #A7C4BC;
   }
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
@@ -86,7 +86,7 @@ body > .team{
 }
 
 body > .status{
-    background-color: var(--webStatus-bg-color);
+    background-color: var(--status-bg-color);
     padding: 0;
 }
 
