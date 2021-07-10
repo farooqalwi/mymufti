@@ -20,6 +20,10 @@ body{
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 
 /* fonts family */
 h1, h2{
@@ -43,12 +47,12 @@ a{
     font-weight: bold;
 }
 
-.facebook-contact a:link {
+.facebook-contact .fbGroup-link:link {
     text-decoration: none;
 }
 
-.facebook-contact a:hover{
-    color: black;
+.facebook-contact .fbGroup-link:hover{
+    color: blue;
     opacity: 1;
 }
 
@@ -423,26 +427,6 @@ body > .contact{
     }
 }
 
-/* for huge height screen */
-@media screen and (min-height: 800px){
-    .status{
-        min-height: 100vh;
-        align-items: flex-start;
-    }
-
-    .status form{
-        margin-top: 80px;
-    }
-
-    .status p{
-        margin-top: 160px;
-    }
-
-    .status .cached{
-        margin-top: 120px;
-    }
-
-}
 
 .visitor-form{
 	background: #FAFAFA;
