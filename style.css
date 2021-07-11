@@ -92,8 +92,7 @@ body > .status{
 
 body > .contact{
     background-color: var(--contact-bg-color);
-    padding: 10px 0;
-    height: 70px;
+    padding-top: 10px;
 }
 
 .all-members {
@@ -104,12 +103,7 @@ body > .contact{
 
 /* for Desktop Screen */
 @media screen and (min-width: 1024px) {
-    body > header{
-        grid-row: 1;
-    }
-
     .team{
-        grid-row: 2;
         display: flex;
         flex-direction: column;
     }
@@ -123,13 +117,13 @@ body > .contact{
     }
 
     /* icon for team member */
-    .rate_review{
-        font-size: 8rem;
-        opacity: 0.5;
+    .imgMember{
+        margin-top: 10px;
+        width: 150px;
+        height: 150px;
     }
 
     .status{
-        grid-row: 3;
         display: flex;
         flex-flow: row-reverse;
         justify-content: space-evenly;
@@ -139,19 +133,15 @@ body > .contact{
     }
 
     /* undercinstruction icon */
-    .status > .cached{
-        font-size: 10rem;
-        opacity: 0.8;
+    .status > .imgConstruction{
+        width: 200px;
+        height: 200px;
         margin: 0 20px;
     }
 
-    .contact{
-        grid-row: 4;
-        display: grid;
-    }
-
-    .contact > header{
-        grid-row: 1;
+    .status > .status-statement > .question{
+        width: 160px;
+        height: 160px;
     }
 
     .contact .facebook-contact{
@@ -161,8 +151,6 @@ body > .contact{
     }
 
     .facebook-contact > a > .facebook-icon{
-        grid-column: 1;
-        grid-row: 3;
         font-size: 2rem;
         color: black;
         opacity: 0.8;
@@ -176,12 +164,7 @@ body > .contact{
 
 /* for Tab (Landscape) */
 @media screen and (max-width: 1024px) and (min-width: 800px) {
-    body > header{
-        grid-row: 1;
-    }
-
     .team{
-        grid-row: 2;
         display: flex;
         flex-direction: column;
     }
@@ -195,13 +178,13 @@ body > .contact{
     }
 
     /* icon for team member */
-    .rate_review{
-        font-size: 8rem;
-        opacity: 0.5;
+    .imgMember{
+        margin-top: 10px;
+        width: 150px;
+        height: 150px;
     }
 
     .status{
-        grid-row: 3;
         display: flex;
         flex-flow: row-reverse;
         justify-content: space-evenly;
@@ -210,24 +193,20 @@ body > .contact{
         margin: 0;
     }
 
+    .status > .status-statement > .question{
+        width: 160px;
+        height: 160px;
+    }
+
     .status .visitor-form{
         width: 50%;
     }
 
     /* undercinstruction icon */
-    .status > .cached{
-        font-size: 10rem;
-        opacity: 0.8;
+    .status > .imgConstruction{
+        width: 200px;
+        height: 200px;
         margin: 0 20px;
-    }
-
-    .contact{
-        grid-row: 4;
-        display: grid;
-    }
-
-    .contact > header{
-        grid-row: 1;
     }
 
     .contact .facebook-contact{
@@ -237,8 +216,6 @@ body > .contact{
     }
 
     .facebook-contact > a > .facebook-icon{
-        grid-column: 1;
-        grid-row: 3;
         font-size: 2rem;
         color: black;
         opacity: 0.8;
@@ -252,12 +229,8 @@ body > .contact{
 
 /* for Tab (Portrait) */
 @media screen and (max-width: 800px) and (min-width: 420px) {
-    body > header{
-        grid-row: 1;
-    }
 
     .team{
-        grid-row: 2;
         display: flex;
         flex-direction: column;
     }
@@ -276,41 +249,36 @@ body > .contact{
     }
 
     /* icon for team member */
-    .rate_review{
-        font-size: 8rem;
-        opacity: 0.5;
+    .imgMember{
+        margin-top: 10px;
+        width: 150px;
+        height: 150px;
     }
 
     .status{
-        grid-row: 3;
-        display: grid;
-        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* undercinstruction icon */
-    .status > .cached{
-        font-size: 7.5rem;
-        opacity: 0.8;
-        grid-row: 1;
+    .status > .imgConstruction{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
     }
 
-    .status > p{
-        grid-row: 2;
+    .status > .status-statement > p{
         padding: 0 30px;
     }
 
+    .status > .status-statement > .question{
+        width: 160px;
+        height: 160px;
+    }
+
     .status > .visitor-form{
-        grid-row: 3;
         width: 220px;
-    }
-
-    .contact{
-        grid-row: 4;
-        display: grid;
-    }
-
-    .contact > header{
-        grid-row: 1;
     }
 
     .contact .facebook-contact{
@@ -320,8 +288,6 @@ body > .contact{
     }
 
     .facebook-contact > a > .facebook-icon{
-        grid-column: 1;
-        grid-row: 3;
         font-size: 2rem;
         color: black;
         opacity: 0.8;
@@ -335,12 +301,7 @@ body > .contact{
 
 /* for Mobile */
 @media screen and (max-width: 420px) {
-    body > header{
-        grid-row: 1;
-    }
-
     .team{
-        grid-row: 2;
         display: flex;
         flex-direction: column;
     }
@@ -359,9 +320,10 @@ body > .contact{
     }
 
     /* icon for team member */
-    .rate_review{
-        font-size: 6rem;
-        opacity: 0.5;
+    .imgMember{
+        margin-top: 10px;
+        width: 120px;
+        height: 120px;
     }
 
     .all-members p{
@@ -369,35 +331,29 @@ body > .contact{
     }
 
     .status{
-        grid-row: 3;
-        display: grid;
-        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* undercinstruction icon */
-    .status > .cached{
-        font-size: 7rem;
-        opacity: 0.8;
-        grid-row: 1;
+    .status > .imgConstruction{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
     }
 
-    .status > p{
-        grid-row: 2;
+    .status > .status-statement > p{
         padding: 0 20px;
     }
 
+    .status > .status-statement > .question{
+        width: 120px;
+        height: 120px;
+    }
+
     .status > .visitor-form{
-        grid-row: 3;
         width: 60%;
-    }
-
-    .contact{
-        grid-row: 4;
-        display: grid;
-    }
-
-    .contact > header{
-        grid-row: 1;
     }
 
     .contact .facebook-contact{
@@ -407,8 +363,6 @@ body > .contact{
     }
 
     .facebook-contact > a > .facebook-icon{
-        grid-column: 1;
-        grid-row: 3;
         font-size: 2rem;
         color: black;
         opacity: 0.8;
@@ -424,14 +378,17 @@ body > .contact{
 @media screen and (min-height: 900px){
 
     /* undercinstruction icon */
-    .status > .cached{
-        font-size: 13rem;
-        opacity: 0.8;
+    .status > .imgConstruction{
         margin: 0 20px;
     }
 
-    .status p{
+    .status > .status-statement > p{
         font-size: 2rem;
+    }
+
+    .status > .status-statement > .question{
+        width: 200px;
+        height: 200px;
     }
 
     .status .visitor-form{
