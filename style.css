@@ -139,11 +139,6 @@ body > .contact{
         margin: 0 20px;
     }
 
-    .status > .status-statement > .question{
-        width: 160px;
-        height: 160px;
-    }
-
     .contact .facebook-contact{
         display: flex;
         align-items: center;
@@ -193,10 +188,6 @@ body > .contact{
         margin: 0;
     }
 
-    .status > .status-statement > .question{
-        width: 160px;
-        height: 160px;
-    }
 
     .status .visitor-form{
         width: 50%;
@@ -272,10 +263,6 @@ body > .contact{
         padding: 0 30px;
     }
 
-    .status > .status-statement > .question{
-        width: 160px;
-        height: 160px;
-    }
 
     .status > .visitor-form{
         width: 220px;
@@ -347,11 +334,6 @@ body > .contact{
         padding: 0 20px;
     }
 
-    .status > .status-statement > .question{
-        width: 120px;
-        height: 120px;
-    }
-
     .status > .visitor-form{
         width: 60%;
     }
@@ -386,10 +368,6 @@ body > .contact{
         font-size: 2rem;
     }
 
-    .status > .status-statement > .question{
-        width: 200px;
-        height: 200px;
-    }
 
     .status .visitor-form{
         margin-left: 40px;
