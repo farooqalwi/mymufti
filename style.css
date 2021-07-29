@@ -101,6 +101,10 @@ body > .contact{
     padding: 0 20px;
 }
 
+.contact p{
+    padding: 0 30px;
+}
+
 /* for Desktop Screen */
 @media screen and (min-width: 1024px) {
     .team{
